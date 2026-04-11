@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/upcomingFragment">
+
+    <fragment
+        android:id="@+id/upcomingFragment"
+        android:name="com.example.eventapps.data.ui.main.UpcomingFragment"
+        android:label="Upcoming"
+        tools:layout="@layout/fragment_upcoming">
+        <action
+            android:id="@+id/action_upcomingFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/finishingFragment"
+        android:name="com.example.eventapps.data.ui.main.FinishingFragment"
+        android:label="Finishing"
+        tools:layout="@layout/fragment_finishing">
+        <action
+            android:id="@+id/action_finishingFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.eventapps.data.ui.main.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.example.eventapps.data.ui.main.FavoriteFragment"
+        android:label="Favorite"
+        tools:layout="@layout/fragment_favorite">
+        <action
+            android:id="@+id/action_favoriteFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.eventapps.data.ui.main.SettingFragment"
+        android:label="Setting"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.eventapps.data.ui.main.DetailFragment"
+        android:label="Detail"
+        tools:layout="@layout/fragment_detail">
+        <argument
+            android:name="extra_id"
+            app:argType="integer" />
+    </fragment>
+</navigation>

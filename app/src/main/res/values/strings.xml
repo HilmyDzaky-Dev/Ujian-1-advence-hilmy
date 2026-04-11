@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">Testing Room Database</string>
+
+    <string name="upcoming">Upcoming</string>
+    <string name="finishing">Finishing</string>
+    <string name="favorite">Favorite</string>
+    <string name="setting">Setting</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="enable_dark_mode">Enable dark mode</string>
+    <string name="favorite_events">Favorite Events</string>
+    <string name="recommendation_events">Recommendation events for you!</string>
+    <string name="finished_events">Finished Events</string>
+    <string name="ended_events">Events that have already ended</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="belum_ada_event">Belum ada event favorit</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="registrasi">Registrasi</string>
+    <string name="upcoming_events">Upcoming Events</string>
+    <string name="lokasi">Lokasi</string>
+
+
+
 </resources>

@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Testing Room Database"
+rootProject.name = "Event Apps"
 include(":app")
  

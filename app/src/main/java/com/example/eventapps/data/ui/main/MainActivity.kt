@@ -11,6 +11,7 @@ import com.example.eventapps.data.ui.ViewModelFactory
 import com.example.testingroomdatabase.R
 import com.example.testingroomdatabase.databinding.ActivityMainBinding
 
+
 class MainActivity : AppCompatActivity() {
     private val binding by lazy { ActivityMainBinding.inflate(layoutInflater) }
 

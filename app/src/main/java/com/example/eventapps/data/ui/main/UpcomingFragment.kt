@@ -63,7 +63,6 @@ class UpcomingFragment : Fragment() {
 
         setupSearch()
 
-        // Panggil fungsi untuk mengambil data
         viewModel.getUpcomingEvents()
     }
 

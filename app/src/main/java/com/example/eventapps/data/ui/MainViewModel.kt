@@ -40,6 +40,17 @@ class MainViewModel(private val eventRepository: EventRepository, private val pr
         }
     }
 
+    fun getReminderSetting(): LiveData<Boolean> {
+        return pref.getReminderSetting().asLiveData()
+    }
+
+
+    fun saveReminderSetting(isReminderActive: Boolean) {
+        viewModelScope.launch {
+            pref.saveReminderSetting(isReminderActive)
+        }
+    }
+
     fun getUpcomingEvents() {
         _isLoading.value = true
         val client = ApiConfig.getApiService().getEvents(1)

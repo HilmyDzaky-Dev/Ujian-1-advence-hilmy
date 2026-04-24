@@ -21,4 +21,10 @@ interface ApiService {
     fun getEventDetail(
         @Path("id") id: String
     ): Call<DetailResponse>
+
+    @GET("events")
+    fun getNearestActiveEvent(
+        @Query("active") active: Int = -1,
+        @Query("limit") limit: Int = 1
+    ): Call<FinishingResponse>
 }
